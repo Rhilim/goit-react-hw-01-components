@@ -1,9 +1,10 @@
-import { Profile } from './Profile';
-import user from '/src/user.json';
+import { Profile } from './Profile/Profile';
+import user from '../user.json';
+// import { Container } from './Profile/Profile.styled';
 
 export const App = () => {
   return (
-    <div>
+    <>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -11,6 +12,6 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-    </div>
+    </>
   );
 };
