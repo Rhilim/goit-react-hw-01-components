@@ -6,6 +6,10 @@ import { StatisticsStats } from './StatisticsStats/StatisticsStats';
 import data from '../data.json';
 import { Container } from './StatisticsTitle/StatisticsTitle.styled';
 
+import { FriendList } from './FriendList/FriendList';
+import friends from '../friends.json';
+import { FriendListItem } from './FriendListItem/FriendListItem';
+
 // import { Container } from './Profile/Profile.styled';
 
 export const App = () => {
@@ -19,9 +23,14 @@ export const App = () => {
         stats={user.stats}
       />
       <Container>
-      <StatisticsTitle title="Upload stats" />
-      <StatisticsStats stats={data} />
+        <StatisticsTitle title="Upload stats" />
+        <StatisticsStats stats={data} />
       </Container>
+
+      <FriendList friends={friends}>
+        <FriendListItem/>
+      </FriendList>
+      
     </>
   );
 };
