@@ -1,10 +1,10 @@
-import { Container, List , ListItem, Image} from './Profile.styled';
+import { Container, List , ListItem, Image, Description} from './Profile.styled';
 
 
 export const Profile = ({ username, tag, location, avatar, stats}) => {
   return (
     <Container>
-      <div className="description">
+      <Description>
         <Image
           src={avatar}
           alt={username}
@@ -13,7 +13,7 @@ export const Profile = ({ username, tag, location, avatar, stats}) => {
         <p className="name">{username}</p>
         <p className="tag">@{tag}</p>
         <p className="location">{location}</p>
-      </div>
+      </Description>
       <List>
         <ListItem>
           <span className="label">Followers</span>

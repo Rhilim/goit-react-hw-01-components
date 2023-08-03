@@ -1,11 +1,18 @@
 import styled from '@emotion/styled'
 
 export const Container = styled.div`
-text-align: center;
-margin: 0;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
 padding: 50px;
-border: grey 2px solid;
-width: 240px;
+`;
+
+export const Description = styled.div`
+padding-top: 12px;
+text-align: center;
+/* padding: 10px; */
+outline: grey 1px solid;
+width: 288px;
 `;
 
 export const List = styled.ul`
