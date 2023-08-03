@@ -2,7 +2,9 @@ import { Profile } from './Profile/Profile';
 import user from '../user.json';
 
 import { StatisticsTitle } from './StatisticsTitle/StatisticsTitle';
+import { StatisticsStats } from './StatisticsStats/StatisticsStats';
 import data from '../data.json';
+
 // import { Container } from './Profile/Profile.styled';
 
 export const App = () => {
@@ -15,7 +17,8 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <StatisticsTitle title="Upload stats" stats={data}/>
+      <StatisticsTitle title="Upload stats" stats={data} />
+      <StatisticsStats stats={data} />
     </>
   );
 };
