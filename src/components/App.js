@@ -4,6 +4,7 @@ import user from '../user.json';
 import { StatisticsTitle } from './StatisticsTitle/StatisticsTitle';
 import { StatisticsStats } from './StatisticsStats/StatisticsStats';
 import data from '../data.json';
+import { Container } from './StatisticsTitle/StatisticsTitle.styled';
 
 // import { Container } from './Profile/Profile.styled';
 
@@ -17,8 +18,10 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <StatisticsTitle title="Upload stats" stats={data} />
+      <Container>
+      <StatisticsTitle title="Upload stats" />
       <StatisticsStats stats={data} />
+      </Container>
     </>
   );
 };

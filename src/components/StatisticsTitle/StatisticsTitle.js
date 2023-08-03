@@ -1,5 +1,8 @@
+import { StatTitle } from "./StatisticsTitle.styled";
+
+
 export const StatisticsTitle = ({title}) => {
     return (
-        <h2 className="title">{title}</h2>
+        <StatTitle>{title}</StatTitle>
     );
 };

@@ -1,13 +1,15 @@
+import { StatList, StatListEl } from "./StatisticsStats.styled";
+
 export const StatisticsStats = ({ stats }) => {
-  // console.log (props.data)
+
   return (
-    <ul className="stat-list">
+    <StatList>
       {stats.map(stat => (
-        <li key={stat.id}>
+        <StatListEl key={stat.id}>
           <span className="label">{stat.label}</span>
-          <span className="percentage">{stat.percentage}</span>
-        </li>
+          <span className="percentage">{stat.percentage}%</span>
+        </StatListEl>
       ))}
-    </ul>
+    </StatList>
   );
 };
