@@ -12,8 +12,7 @@ import { FriendListItem } from './FriendListItem/FriendListItem';
 
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 import transactions from '../transactions.json';
-
-
+import { Table } from './TransactionHistory/TransactionHistory.styled ';
 
 export const App = () => {
   return (
@@ -25,16 +24,19 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
+
       <Container>
         <StatisticsTitle title="Upload stats" />
         <StatisticsStats stats={data} />
       </Container>
 
       <FriendList friends={friends}>
-        <FriendListItem/>
+        <FriendListItem />
       </FriendList>
-      
-      <TransactionHistory items={transactions} />;
+
+      <Table>
+        <TransactionHistory items={transactions} />
+      </Table>
     </>
   );
 };

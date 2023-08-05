@@ -4,7 +4,7 @@ export const Container = styled.div`
 display: flex;
 flex-direction: column;
 align-items: flex-start;
-padding: 50px;
+padding: 50px 50px 0 50px ;
 `;
 
 export const Description = styled.div`
