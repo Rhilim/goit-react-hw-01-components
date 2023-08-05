@@ -10,6 +10,9 @@ import { FriendList } from './FriendList/FriendList';
 import friends from '../friends.json';
 import { FriendListItem } from './FriendListItem/FriendListItem';
 
+import { TransactionHistory } from './TransactionHistory/TransactionHistory';
+import transactions from '../transactions.json';
+
 
 
 export const App = () => {
@@ -31,6 +34,7 @@ export const App = () => {
         <FriendListItem/>
       </FriendList>
       
+      <TransactionHistory items={transactions} />;
     </>
   );
 };
