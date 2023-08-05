@@ -10,7 +10,7 @@ import { FriendList } from './FriendList/FriendList';
 import friends from '../friends.json';
 import { FriendListItem } from './FriendListItem/FriendListItem';
 
-// import { Container } from './Profile/Profile.styled';
+
 
 export const App = () => {
   return (
