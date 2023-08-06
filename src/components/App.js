@@ -26,7 +26,7 @@ export const App = () => {
       />
 
       <Container>
-        <StatisticsTitle title="Upload stats" />
+        <StatisticsTitle title="Upload stats"/>
         <StatisticsStats stats={data} />
       </Container>
 
